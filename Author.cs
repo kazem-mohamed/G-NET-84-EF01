@@ -8,4 +8,5 @@ public class Author
     public string Email { get; set; } = string.Empty;
     public string Biography { get; set; } = string.Empty;
     public DateTime DateOfBirth { get; set; }
+    public ICollection<Book> Books { get; set; } = new List<Book>();
 }
